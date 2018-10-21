@@ -129,9 +129,10 @@ aside #intro>p,aside #intro>a{
 	margin-top:1rem;
 }
 
-aside #photos>img{
-	width:32%;
+aside img{
+	width:30%;
 	margin-top:1rem;
+	
 }
 
 
@@ -303,8 +304,9 @@ section #text{margin-left:1rem;}
      
      div,section{margin-top:1rem;}
      aside,#body-section{float:none; width:100%; }
-     aside #photos>img{
-	width:10%;
+     aside img{
+	width:30%;
+	max-width: 100%;
 	margin-top:1rem;
 }
  
@@ -348,21 +350,27 @@ header #search{width:40%;}
     section #profile-image{margin:0;}
 
     
-
-
-    section #profile-image>img{
-       
-    }
     section #profile-info{
 	padding-top:0rem;
 	margin-left:0rem;
 }
 
-}
 
 
+@media screen and (max-width: 540px){
+   
+   nav ul:first-child{
 
+     display: none;
+     
+   }
 
-	
+   #body-section>nav ul:nth-child(2) li{
+   	display: block;
+   	margin:0;
+   	margin-top:.5rem;
+   }
+   
+
 
 }
